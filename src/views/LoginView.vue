@@ -41,7 +41,11 @@
           Don't have an account?
           <router-link to="/auth/signup" class="link">Sign up here</router-link>
         </p>
-
+        <div class="demo-credentials">
+          <p class="demo-title">Demo Credentials:</p>
+          <p class="demo-text">Email: Sadeniyi016@gmail.com</p>
+          <p class="demo-text">Password: password123</p>
+        </div>
         <div v-if="message" :class="['toast', message.type]">
           {{ message.text }}
         </div>
@@ -304,5 +308,25 @@ const resetAfterDelay = () => {
 .toast.error {
   background: #fee2e2;
   color: #991b1b;
+}
+
+.demo-credentials {
+  margin-top: 1.5rem; /* mt-6 */
+  padding: 1rem; /* p-4 */
+  background-color: #eff6ff; /* bg-blue-50 */
+  border-radius: 0.5rem; /* rounded-lg */
+  border: 1px solid #bfdbfe; /* border-blue-200 */
+}
+
+.demo-title {
+  font-size: 0.875rem; /* text-sm */
+  color: #1e3a8a; /* text-blue-900 */
+  font-weight: 500; /* font-medium */
+  margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.demo-text {
+  font-size: 0.875rem; /* text-sm */
+  color: #1e40af; /* text-blue-800 */
 }
 </style>
